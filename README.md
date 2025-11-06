@@ -8,8 +8,8 @@ By David V. Kimball
 
 
 ### Status
-[![GitHub last commit](https://img.shields.io/github/last-commit/Jaxon-Delgado/blog-astro.git)](https://github.com/Jaxon-Delgado/blog-astro.git)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Jaxon-Delgado/blog-astro.git)](https://github.com/Jaxon-Delgado/blog-astro.git)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Jaxon-Delgado/blog-astro)](https://github.com/Jaxon-Delgado/blog-astro)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Jaxon-Delgado/blog-astro)](https://github.com/Jaxon-Delgado/blog-astro)
 
 ### Tech Stack
 [![Astro](https://img.shields.io/badge/Astro-5.15.1-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
