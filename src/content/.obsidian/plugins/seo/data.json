@@ -579,7 +579,7 @@
         "titleLength": [
           {
             "passed": false,
-            "message": "Title too short: 9 characters",
+            "message": "Title too short: 20 characters",
             "suggestion": "Aim for 30-60 characters",
             "severity": "warning"
           }
@@ -587,23 +587,47 @@
         "metaDescription": [
           {
             "passed": false,
-            "message": "No frontmatter found",
-            "suggestion": "Add frontmatter with description property",
+            "message": "Description too short: 99 characters",
+            "suggestion": "Aim for 120-160 characters",
             "severity": "warning"
           }
         ],
-        "titleH1Uniqueness": [],
-        "keywordInTitle": [],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
         "keywordInDescription": [],
-        "keywordInHeadings": [],
-        "keywordInSlug": [],
+        "keywordInHeadings": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "keywordInSlug": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
         "slugFormat": [],
         "keywordDensity": [
           {
-            "passed": false,
-            "message": "No frontmatter found",
-            "suggestion": "Add frontmatter with keyword property",
-            "severity": "warning"
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
           }
         ],
         "headingOrder": [
@@ -614,15 +638,15 @@
             "severity": "warning",
             "position": {
               "line": 35,
-              "searchText": "# Heading 1\r",
-              "context": "### Headings\r\n\r\n# Heading 1\r\n## Heading 2\r\n### Heading 3\r"
+              "searchText": "# Heading 1",
+              "context": "### Headings\n\n# Heading 1\n## Heading 2\n### Heading 3"
             }
           }
         ],
         "contentLength": [
           {
             "passed": true,
-            "message": "Good content length: 1236 words",
+            "message": "Good content length: 1185 words",
             "severity": "info"
           }
         ],
@@ -645,7 +669,7 @@
             "position": {
               "line": 125,
               "searchText": "![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)",
-              "context": "**Two Images Side by Side**\r\n\r\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\r\n\r"
+              "context": "**Two Images Side by Side**\n\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\n"
             }
           },
           {
@@ -656,7 +680,7 @@
             "position": {
               "line": 126,
               "searchText": "![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)",
-              "context": "\r\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\r\n\r\n**Three Images in a Row**\r"
+              "context": "\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\n\n**Three Images in a Row**"
             }
           },
           {
@@ -667,7 +691,7 @@
             "position": {
               "line": 130,
               "searchText": "![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)",
-              "context": "**Three Images in a Row**\r\n\r\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\r\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\r"
+              "context": "**Three Images in a Row**\n\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)"
             }
           },
           {
@@ -678,7 +702,7 @@
             "position": {
               "line": 131,
               "searchText": "![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)",
-              "context": "\r\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\r\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\r\n\r"
+              "context": "\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\n"
             }
           },
           {
@@ -689,7 +713,7 @@
             "position": {
               "line": 132,
               "searchText": "![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)",
-              "context": "![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\r\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\r\n\r\n**Four Images in a Row**\r"
+              "context": "![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\n\n**Four Images in a Row**"
             }
           },
           {
@@ -700,7 +724,7 @@
             "position": {
               "line": 136,
               "searchText": "![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)",
-              "context": "**Four Images in a Row**\r\n\r\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r"
+              "context": "**Four Images in a Row**\n\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)"
             }
           },
           {
@@ -711,7 +735,7 @@
             "position": {
               "line": 137,
               "searchText": "![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)",
-              "context": "\r\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r"
+              "context": "\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)"
             }
           },
           {
@@ -722,7 +746,7 @@
             "position": {
               "line": 138,
               "searchText": "![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)",
-              "context": "![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r\n\r"
+              "context": "![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\n"
             }
           },
           {
@@ -733,7 +757,7 @@
             "position": {
               "line": 139,
               "searchText": "![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)",
-              "context": "![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r\n\r\n**How to Use Multiple Images / Gallery**\r"
+              "context": "![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\n\n**How to Use Multiple Images / Gallery**"
             }
           }
         ],
@@ -746,7 +770,7 @@
             "position": {
               "line": 221,
               "searchText": "https://example.com",
-              "context": "This is a [reference link][1] and this is another [reference link][markdown].\r\n\r\n[1]: https://example.com\r\n[markdown]: https://daringfireball.net/projects/markdown/\r\n\r"
+              "context": "This is a [reference link][1] and this is another [reference link][markdown].\n\n[1]: https://example.com\n[markdown]: https://daringfireball.net/projects/markdown/\n"
             }
           },
           {
@@ -757,7 +781,7 @@
             "position": {
               "line": 222,
               "searchText": "https://daringfireball.net/projects/markdown/",
-              "context": "\r\n[1]: https://example.com\r\n[markdown]: https://daringfireball.net/projects/markdown/\r\n\r\n## Code Blocks\r"
+              "context": "\n[1]: https://example.com\n[markdown]: https://daringfireball.net/projects/markdown/\n\n## Code Blocks"
             }
           }
         ],
@@ -779,152 +803,14 @@
         "externalBrokenLinks": [
           {
             "passed": true,
-            "message": "External link: https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 117,
-              "searchText": "https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-              "context": "\r\n![Mountains](/posts/attachments/mountains.png)\r\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\r\n\r\n#### Multiple Image Layouts\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 117,
-              "searchText": "https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-              "context": "\r\n![Mountains](/posts/attachments/mountains.png)\r\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\r\n\r\n#### Multiple Image Layouts\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 125,
-              "searchText": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-              "context": "**Two Images Side by Side**\r\n\r\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\r\n\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 126,
-              "searchText": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop",
-              "context": "\r\n![Mountain landscape](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![Ocean view](https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=600&fit=crop)\r\n\r\n**Three Images in a Row**\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 130,
-              "searchText": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
-              "context": "**Three Images in a Row**\r\n\r\n![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\r\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 132,
-              "searchText": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
-              "context": "![Forest path](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop)\r\n![Desert sunset](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop)\r\n![City skyline](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop)\r\n\r\n**Four Images in a Row**\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 136,
-              "searchText": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop",
-              "context": "**Four Images in a Row**\r\n\r\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 137,
-              "searchText": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop",
-              "context": "\r\n![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 138,
-              "searchText": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
-              "context": "![Winter landscape](https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop)\r\n![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r\n\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 139,
-              "searchText": "https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop",
-              "context": "![Spring flowers](https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop)\r\n![Summer beach](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop)\r\n![Autumn leaves](https://images.unsplash.com/photo-1441260038675-7329ab4cc264?w=800&h=600&fit=crop)\r\n\r\n**How to Use Multiple Images / Gallery**\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://obsidian.md",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 155,
-              "searchText": "https://obsidian.md",
-              "context": "### Linked Images\r\n\r\n[![Mountains](/posts/attachments/mountains.png)](https://obsidian.md)\r\n\r\n```\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://example.com",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 221,
-              "searchText": "https://example.com",
-              "context": "This is a [reference link][1] and this is another [reference link][markdown].\r\n\r\n[1]: https://example.com\r\n[markdown]: https://daringfireball.net/projects/markdown/\r\n\r"
-            }
-          },
-          {
-            "passed": true,
-            "message": "External link: https://daringfireball.net/projects/markdown/",
-            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
-            "severity": "notice",
-            "position": {
-              "line": 222,
-              "searchText": "https://daringfireball.net/projects/markdown/",
-              "context": "\r\n[1]: https://example.com\r\n[markdown]: https://daringfireball.net/projects/markdown/\r\n\r\n## Code Blocks\r"
-            }
+            "message": "Found 13 external link(s), all appear to resolve and are working",
+            "severity": "info"
           }
         ],
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: 6.8 (Easy to read)",
+            "message": "Good reading level: 6.7 (Easy to read)",
             "severity": "info"
           }
         ]
@@ -932,7 +818,7 @@
       "overallScore": 40,
       "issuesCount": 0,
       "warningsCount": 15,
-      "noticesCount": 13
+      "noticesCount": 4
     }
   ],
   "lastScanTimestamp": 1762412663652,

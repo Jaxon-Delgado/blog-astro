@@ -7,8 +7,8 @@ tags:
   - ci/cd
   - devsecops
   - homelab
-image: ""
-imageAlt: ""
+image: concourse-cover.png
+imageAlt: A basic Concourse pipeline screen shot from Concourse CI's UI
 imageOG: false
 hideCoverImage: false
 hideTOC: false
