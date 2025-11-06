@@ -180,13 +180,13 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://blog.bardel.us",
   // [CONFIG:SITE_TITLE]
-  title: "Astro Modular",
+  title: "Jaxon's Blog",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "A flexible blog theme designed for Obsidian users.",
+  description: "A blog to document and log all of my projects, documentation, and overall thoughts.",
   // [CONFIG:SITE_AUTHOR]
-  author: "David V. Kimball",
+  author: "Jaxon Delgado",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
@@ -196,7 +196,7 @@ export const siteConfig: SiteConfig = {
 
   // Global Settings
   // [CONFIG:THEME]
-  theme: "oxygen", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
+  theme: "charcoal", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
   // [CONFIG:CUSTOM_THEME_FILE]
   customThemeFile: "custom", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
   // [CONFIG:AVAILABLE_THEMES]
@@ -241,7 +241,7 @@ export const siteConfig: SiteConfig = {
   featureButton: "mode", // "mode" | "graph" | "theme" | "none"
   deployment: {
     // [CONFIG:DEPLOYMENT_PLATFORM]
-    platform: "netlify", // "netlify" | "vercel" | "github-pages" - sets redirect configuration for the chosen platform
+    platform: "github-pages", // "netlify" | "vercel" | "github-pages" - sets redirect configuration for the chosen platform
   },
 
   // Command Palette
@@ -314,18 +314,13 @@ export const siteConfig: SiteConfig = {
       { title: "Projects", url: "/projects" },
       { title: "Docs", url: "/docs" },
       { title: "About", url: "/about" },
-      { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" },
+      { title: "GitHub", url: "https://github.com/Jaxon-Delgado/blog-astro" },
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
-      },
-      {
         title: "GitHub",
-        url: "https://github.com/davidvkimball",
+        url: "https://github.com/Jaxon-Delgado",
         icon: "github",
       },
     ],

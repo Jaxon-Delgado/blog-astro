@@ -1,7 +1,7 @@
 {
   "runWizardOnStartup": true,
   "currentTemplate": "standard",
-  "currentTheme": "oxygen",
+  "currentTheme": "charcoal",
   "customThemeFile": "custom",
   "contentOrganization": "folder-based",
   "themeColors": {
@@ -12,10 +12,10 @@
     }
   },
   "siteInfo": {
-    "site": "https://astro-modular.netlify.app",
-    "title": "Astro Modular",
-    "description": "A flexible blog theme designed for Obsidian users.",
-    "author": "David V. Kimball",
+    "site": "https://blog.bardel.us",
+    "title": "Jaxon's Blog",
+    "description": "A blog to document and log all of my projects, documentation, and overall thoughts.",
+    "author": "Jaxon Delgado",
     "language": "en",
     "faviconThemeAdaptive": true,
     "defaultOgImageAlt": "Astro Modular logo."
@@ -58,18 +58,13 @@
       },
       {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball/astro-modular"
+        "url": "https://github.com/Jaxon-Delgado/blog-astro"
       }
     ],
     "social": [
       {
-        "title": "X",
-        "url": "https://x.com/davidvkimball",
-        "icon": "x-twitter"
-      },
-      {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball",
+        "url": "https://github.com/Jaxon-Delgado",
         "icon": "github"
       }
     ]
@@ -205,11 +200,11 @@
     "comments": {
       "enabled": false,
       "provider": "giscus",
-      "rawScript": "",
-      "repo": "davidvkimball/astro-modular",
-      "repoId": "R_kgDOPllfKw",
-      "category": "General",
-      "categoryId": "DIC_kwDOPllfK84CvUpx",
+      "rawScript": "<script src=\"https://giscus.app/client.js\"\n        data-repo=\"Jaxon-Delgado/blog-astro\"\n        data-repo-id=\"R_kgDOQQpO1w\"\n        data-category=\"Announcements\"\n        data-category-id=\"DIC_kwDOQQpO184Cxgom\"\n        data-mapping=\"pathname\"\n        data-strict=\"0\"\n        data-reactions-enabled=\"1\"\n        data-emit-metadata=\"0\"\n        data-input-position=\"bottom\"\n        data-theme=\"preferred_color_scheme\"\n        data-lang=\"en\"\n        crossorigin=\"anonymous\"\n        async>\n</script>",
+      "repo": "Jaxon-Delgado/blog-astro",
+      "repoId": "R_kgDOQQpO1w",
+      "category": "Announcements",
+      "categoryId": "DIC_kwDOQQpO184Cxgom",
       "mapping": "pathname",
       "strict": "0",
       "reactions": "1",
@@ -221,7 +216,7 @@
     }
   },
   "deployment": {
-    "platform": "netlify"
+    "platform": "github-pages"
   },
   "pluginConfig": {
     "obsidianSettings": {
