@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "concourse-ci-server-setup",
+      "type": "post",
+      "title": "Concourse CI Server Setup",
+      "slug": "concourse-ci-server-setup",
+      "connections": 0
+    },
+    {
       "id": "formatting-reference",
       "type": "post",
       "title": "Formatting Reference",
@@ -109,9 +116,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 5,
+    "totalPosts": 6,
     "totalConnections": 14,
     "maxNodesApplied": false,
-    "originalNodeCount": 5
+    "originalNodeCount": 6
   }
 }

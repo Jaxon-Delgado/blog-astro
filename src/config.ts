@@ -180,7 +180,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://blog.bardel.us",
+  site: "https://jaxon-delgado.github.io/blog-astro/",
   // [CONFIG:SITE_TITLE]
   title: "Jaxon's Blog",
   // [CONFIG:SITE_DESCRIPTION]
