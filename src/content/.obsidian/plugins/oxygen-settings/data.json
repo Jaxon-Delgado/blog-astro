@@ -1,0 +1,80 @@
+{
+  "lightStyle": "minimal-light",
+  "darkStyle": "minimal-dark",
+  "lightScheme": "minimal-oxygen-light",
+  "darkScheme": "minimal-oxygen-dark",
+  "editorFont": "",
+  "lineHeight": 1.5,
+  "lineWidth": 40,
+  "lineWidthWide": 50,
+  "maxWidth": 88,
+  "textNormal": 16,
+  "textSmall": 13,
+  "imgGrid": false,
+  "imgWidth": "img-default-width",
+  "tableWidth": "table-default-width",
+  "iframeWidth": "iframe-default-width",
+  "mapWidth": "map-default-width",
+  "chartWidth": "chart-default-width",
+  "colorfulHeadings": false,
+  "colorfulFrame": false,
+  "colorfulActiveStates": false,
+  "trimNames": true,
+  "labeledNav": false,
+  "fullWidthMedia": true,
+  "hideTitleBarOnHover": false,
+  "bordersToggle": true,
+  "minimalStatus": true,
+  "focusMode": false,
+  "underlineInternal": true,
+  "underlineExternal": true,
+  "folding": true,
+  "lineNumbers": false,
+  "readableLineLength": true,
+  "devBlockWidth": false,
+  "customPresets": [
+    {
+      "id": "discord",
+      "name": "Discord",
+      "author": "David V. Kimball",
+      "version": "1.0.0",
+      "light": {
+        "base": {
+          "h": 0,
+          "s": 0,
+          "l": 98
+        },
+        "accent": {
+          "h": 235,
+          "s": 86,
+          "l": 65
+        },
+        "colors": {
+          "bg1": "#fbfbfb",
+          "bg2": "#f3f3f4",
+          "bg3": "#ffffff"
+        }
+      },
+      "dark": {
+        "base": {
+          "h": 240,
+          "s": 6,
+          "l": 7
+        },
+        "accent": {
+          "h": 235,
+          "s": 86,
+          "l": 65
+        },
+        "colors": {
+          "bg1": "#1a1a1e",
+          "bg2": "#121214",
+          "ui3": "#222327"
+        },
+        "frameLightnessOffset": -5
+      }
+    }
+  ],
+  "enableCustomPresets": true,
+  "dashedUnderlineInternal": false
+}

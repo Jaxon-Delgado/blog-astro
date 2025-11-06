@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "formatting-reference",
+      "type": "post",
+      "title": "Formatting Reference",
+      "slug": "formatting-reference",
+      "connections": 11
+    },
+    {
+      "id": "getting-started",
+      "type": "post",
+      "title": "Getting Started",
+      "slug": "getting-started",
+      "connections": 6
+    },
+    {
+      "id": "obsidian-embeds-demo",
+      "type": "post",
+      "title": "Obsidian Embeds Demo",
+      "slug": "obsidian-embeds-demo",
+      "connections": 0
+    },
+    {
+      "id": "obsidian-vault-guide",
+      "type": "post",
+      "title": "Obsidian Vault Guide",
+      "slug": "obsidian-vault-guide",
+      "connections": 0
+    },
+    {
+      "id": "sample-folder-based-post",
+      "type": "post",
+      "title": "Sample Folder-Based Post",
+      "slug": "sample-folder-based-post",
+      "connections": 0
+    }
+  ],
+  "connections": [
+    {
+      "source": "formatting-reference",
+      "target": "getting-started",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "getting-started",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "sample-folder-based-post",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "obsidian-vault-guide",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "getting-started",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "getting-started",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "getting-started",
+      "type": "link"
+    },
+    {
+      "source": "formatting-reference",
+      "target": "obsidian-embeds-demo",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "obsidian-vault-guide",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "formatting-reference",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "obsidian-vault-guide",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "formatting-reference",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "obsidian-vault-guide",
+      "type": "link"
+    },
+    {
+      "source": "getting-started",
+      "target": "formatting-reference",
+      "type": "link"
+    }
+  ],
+  "metadata": {
+    "totalPosts": 5,
+    "totalConnections": 14,
+    "maxNodesApplied": false,
+    "originalNodeCount": 5
+  }
+}
