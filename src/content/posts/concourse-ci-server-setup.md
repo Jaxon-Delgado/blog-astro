@@ -103,9 +103,9 @@ pct start 202 && pct exec 202 -- apt update && apt upgrade -y
 pct start 203 && pct exec 203 -- apt update && apt upgrade -y
 ```
 
-## Step 2: Setting up the PostgreSQL (LXC: postgres)
+## Step 2: Setting up PostgreSQL
 
-Install and Configure PostgreSQL:
+In your postgres LXC, install and Configure PostgreSQL:
 
 ```bash
 apt install -y postgresql postgresql-contrib
@@ -151,7 +151,7 @@ As per the [Concourse Docs](https://concourse-ci.org/concourse-generate-key.html
 - **TSA Host Key**: Used by the web node for the SSH worker registration gateway server ("TSA"). The public key is given to each worker node to verify the remote host when connecting via SSH.
 - **Worker Key**: Each worker node verifies its registration with the web node via an SSH key. The public key **must** be listed in the web node's _authorized worker keys_ file in order for the worker to register
 
-### Generating the keys
+### 3.1 Generating the keys
 
 I recommend generating the keys on the web node for ease of access. In our case, we will be using `ssh-keygen` to generate all the necessary keys:
 
@@ -172,9 +172,9 @@ Which will result in the following files:
 (We do not need the `session_signing_key.pub` file)
 > It is possible to have multiple worker nodes, however we will not cover how to generate and use those keys in this writeup. Detailed steps can be found in the [Concourse Docs](https://concourse-ci.org/concourse-generate-key.html) on keygen
 
-## Step 4: Concourse Web Setup (LXC: concourse-web)
+## Step 4: Concourse Web Setup
 
-### 4.1 Install Concourse CLI
+### 4.1 In the concourse-web LXC, Install Concourse CLI
 
 ```bash
 # Dependencies
@@ -197,7 +197,7 @@ If you want to make it easier to use the Concourse CLI, add it to the PATH like 
 PATH="$PATH:/usr/local/concourse/bin"
 ```
 
-## 4.2 Installing the Concourse Web Node
+### 4.2 Installing the Concourse Web Node
 
 Create a dedicated user and directories:
 
@@ -315,9 +315,9 @@ Everything should be operational and green! If the service failed to start, chec
 
 ---
 
-## Step 5: Concourse Worker Setup (LXC: concourse-worker)
+## Step 5: Concourse Worker Setup
 
-### 5.1 Install Concourse CLI
+### 5.1 In the concourse-worker LXC, Install Concourse CLI
 
 ```bash
 # Dependencies
