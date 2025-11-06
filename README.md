@@ -1,25 +1,15 @@
-# Astro Modular
-
-A flexible blog theme designed for Obsidian users. 
-
-[![Alt](https://github.com/user-attachments/assets/612b2171-d141-412b-a891-5b1caa1447b8 "Astro Modular theme shown off in 3 screenshots, with the left screenshot showing the homepage, the top right showing the bottom of a post, and the bottom right showing a minimal homepage")](https://astro.build/themes/details/astro-modular/)
-
-## Use Obsidian as a CMS
-
-![Alt](https://github.com/user-attachments/assets/7bb4cdb9-0680-4776-8a72-c542dd63055b "Astro Modular Obsidian vault")
+# Jaxon's Blog with Astro Modular
+By David V. Kimball
 
 
 ## Stats
 
-![Alt](https://repobeats.axiom.co/api/embed/66fe41c94d95b32b92c1a2fd8d6dc83d386bc10a.svg "Repobeats analytics image")
-
-![Alt](https://github.com/user-attachments/assets/e09c8ee1-6f91-46d6-84a5-e2d8a35c1e14 "Pagespeed scores")
+![Alt](https://repobeats.axiom.co/api/embed/0429e547e5a7983f09c401526e1e30a34662e673.svg "Repobeats analytics image")
 
 
 ### Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3f849f7a-71e6-463b-84af-01c523012348/deploy-status)](https://app.netlify.com/sites/astro-modular/deploys)
-[![GitHub last commit](https://img.shields.io/github/last-commit/davidvkimball/astro-modular)](https://github.com/davidvkimball/astro-modular)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/davidvkimball/astro-modular)](https://github.com/davidvkimball/astro-modular)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Jaxon-Delgado/blog-astro.git)](https://github.com/Jaxon-Delgado/blog-astro.git)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Jaxon-Delgado/blog-astro.git)](https://github.com/Jaxon-Delgado/blog-astro.git)
 
 ### Tech Stack
 [![Astro](https://img.shields.io/badge/Astro-5.15.1-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
