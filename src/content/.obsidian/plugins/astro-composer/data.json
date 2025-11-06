@@ -5,7 +5,7 @@
   "postsLinkBasePath": "/posts/",
   "automatePostCreation": true,
   "autoInsertProperties": true,
-  "creationMode": "folder",
+  "creationMode": "file",
   "indexFileName": "index",
   "dateFormat": "YYYY-MM-DD",
   "excludedDirectories": "special",

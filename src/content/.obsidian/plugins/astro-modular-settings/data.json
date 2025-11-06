@@ -3,7 +3,7 @@
   "currentTemplate": "standard",
   "currentTheme": "charcoal",
   "customThemeFile": "custom",
-  "contentOrganization": "folder-based",
+  "contentOrganization": "file-based",
   "themeColors": {
     "mode": "simple",
     "simpleColors": {

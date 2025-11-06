@@ -5,7 +5,7 @@
   "imageSize": "large",
   "frontmatter": {
     "key": "image",
-    "valueFormat": "[[{image-url}]]",
+    "valueFormat": "[[attachments/{image-url}]]",
     "appendReferral": false
   },
   "imageProvider": "unsplash",
