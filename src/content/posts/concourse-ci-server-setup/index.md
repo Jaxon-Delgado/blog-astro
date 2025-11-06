@@ -7,15 +7,15 @@ tags:
   - ci/cd
   - devsecops
   - homelab
-image: concourse-cover.png
+image: "[[concourse-cover.png]]"
 imageAlt: A basic Concourse pipeline screen shot from Concourse CI's UI
 imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
-draft: true
+draft: false
 aliases:
-  - getting-started 1
+  - concourse
 ---
 ## Overview
 
@@ -23,7 +23,7 @@ This project demonstrates the process of deploying a **Concourse CI/CD instance*
 
 ## Objectives
 
-1. Provision LXC and VM in **Proxmox** for Concourse Web, Concourse Worker, and PostgreSQL nodes
+1. Provision LXC and VM in **[Proxmox](../proxmox-topography-for-homelab/Proxmox)** for Concourse Web, Concourse Worker, and PostgreSQL nodes
 2. Install and configure **PostgreSQL** for data storage
 3. Install and deploy a **Web node** instance for GUI access
 4. Install and deploy a **Worker node** to run the pipelines
